@@ -6,9 +6,16 @@
 		<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
 		<script src="lib/raphael.js"></script>
 		<script src="js/turtle.js"></script>
+		<script src="js/embed-client.js"></script>
 		<script type="text/javascript">
 			$(document).bind('ready', function(event) {
 				turtle.init();
+			});
+			$(document).bind('EmbedSandbox:activate', function(event, msg) {
+				console.log('activated', msg.data);
+				if (msg.data.program) {
+					$('#editor').val(msg.data.program);
+				}
 			});
 		</script>
 	</head>
