@@ -1,0 +1,29 @@
+html, body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+#gfx {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 100px;
+	padding: 16px;
+	background: #efefef;
+}
+
+#control {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100px;
+	padding: 4px;
+}
+
+#editor {
+	width: 75%;
+	height: 100%;
+}

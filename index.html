@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Embedded turtle graphics demo</title>
+		<link rel="stylesheet" type="text/css" href="style/turtle.css">
+		<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+		<script src="lib/raphael.js"></script>
+		<script src="js/turtle.js"></script>
+		<script type="text/javascript">
+			$(document).bind('ready', function(event) {
+				turtle.init();
+			});
+		</script>
+	</head>
+	<body>
+		<div id=gfx></div>
+		<div id=control>
+			<textarea id=editor></textarea>
+			<button id=run>Run program</button>
+		</div>
+	</body>
+</html>
+
